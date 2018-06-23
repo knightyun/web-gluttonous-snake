@@ -31,7 +31,7 @@
 
 		#ctrl button {
 			background-color: saddlebrown;
-			margin-top: 40px;
+			margin-top: 20px;
 		}
 
 		#up {
@@ -71,7 +71,6 @@
 			width: 8px;
 			height: 8px;
 			line-height: 0;
-			/* border: 0px solid white; */
 			margin: 0;
 		}
 
@@ -105,7 +104,6 @@
 			border: 1px solid green;
 			background: #0ca;
 			margin-top: 10px;
-			display: none;
 		}
 
 		#msg {
@@ -175,8 +173,11 @@
 			var setIcon = document.getElementById("set-icon");
 			var setContent = document.getElementById("set-content");
 			var msg = document.getElementById("msg");
+			setContent.style.display = 'none';
+
+			// menu button
 			setIcon.onclick = function () {
-				if (setContent.style.display == 'none') {
+				if (setContent.style.display == "none") {
 					setContent.style.display = "inline-block";
 					setIcon.style.backgroundColor = "#ddd";
 				} else {
@@ -184,6 +185,7 @@
 					setIcon.style.backgroundColor = "#ccc";
 				}
 			}
+
 			// initialize map array
 			function InitMap() {
 				for (y = 0; y < H; y++) {
@@ -284,11 +286,11 @@
 			// print game view
 			function PrintMap() {
 				for (y = 0; y < H; y++) {
-					var mapRow = document.createElement("div");
+					mapRow = document.createElement("div");
 					mapRow.className = "map-row";
 					root.appendChild(mapRow);
 					for (x = 0; x < W; x++) {
-						var mapCol = document.createElement("div");
+						mapCol = document.createElement("div");
 						switch (mapArr[y][x]) {
 							case 0:
 								mapCol.className = "inner";
@@ -312,9 +314,7 @@
 								break;
 						}
 					}
-
 				}
-
 			}
 
 			function GetInput() {
@@ -355,8 +355,8 @@
 					SetSpeed();
 					SetSnakeNum();
 					SetRandNum();
-					EatFood();
 					PrintMap();
+					EatFood();
 					// speed = 10;
 					document.getElementById("score").innerHTML = l;
 				}, 1000 / speed);
