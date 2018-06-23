@@ -1,2 +1,4 @@
 # web-gluttonous-snake
-网页贪吃蛇游戏(web gluttonous snake game).
+网页贪吃蛇游戏.
+
+Web gluttonous snake game.
