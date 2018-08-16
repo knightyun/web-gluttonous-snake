@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./snake.css">
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <title>贪吃蛇</title>
+    <!-- baidu tongji -->
+    <script>
+    	   var _hmt = _hmt || [];
+    	   (function() {
+    	   	    var hm = document.createElement("script");
+    	   	    hm.src = "https://hm.baidu.com/hm.js?3cc66f8a60baf968eac4e8b48584c902";
+    	   	    var s = document.getElementsByTagName("script")[0];
+    	   	    s.parentNode.insertBefore(hm, s);
+    	   	})();
+    </script>
+</head>
+
+<body>
+  <!--  <h3 id="title">贪吃蛇</h3> -->
+
+    <div id="setting">
+        <div id="set-icon">
+            <div id="triangle">
+                <div></div>
+            </div>
+        </div>
+        <div id="set-content">
+            <small>速度：</small>
+            <select id="speed">
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="5">6</option>
+				<option value="5">7</option>
+				<option value="5">8</option>
+				<option value="5">9</option>
+				<option value="5">10</option>
+			</select>
+        </div>
+        <p><b>菜单</b></p>
+    </div>
+
+    <div id="div-root"></div>
+
+    <div id="msg">
+        <p>得分：
+            <span id="score"></span>
+        </p>
+    </div>
+
+    <div id="alert-box">
+        <div id="alert-msg"></div>
+        <div id="alert-btn">开始游戏</div>
+    </div>
+
+    <div id="ctrl">
+        <button id="up"></button>
+        <br />
+        <button id="left"></button>
+        <button id="stop">
+        	    <div id="toggle"></div>
+        </button>
+        <button id="right"></button>
+        <br />
+        <button id="down"></button>
+    </div>
+    
+    <script src="./snake.js"></script>
+</body>
+
+</html>

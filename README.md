@@ -1,4 +1,7 @@
-# web-gluttonous-snake
-网页贪吃蛇游戏.
+## 网页版贪吃蛇游戏.
 
-Web gluttonous snake game.
+> Web gluttonous snake game.
+
+预览网站: 
+
+[http://huangqiyun.top/snake/](http://huangqiyun.top/snake/)
